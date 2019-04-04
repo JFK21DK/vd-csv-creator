@@ -1,0 +1,29 @@
+{
+  "name": "vd-csv-creator",
+  "version": "1.0.0",
+  "description": "Voter Declaration CSV Creator",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JFK21DK/vd-csv-creator.git"
+  },
+  "keywords": [
+    "jfk21",
+    "csv",
+    "voter-declaration"
+  ],
+  "author": "Ismail Faizi kanafghan@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JFK21DK/vd-csv-creator/issues"
+  },
+  "homepage": "https://github.com/JFK21DK/vd-csv-creator#readme",
+  "dependencies": {
+    "command-line-args": "^5.1.1",
+    "csv-parser": "^2.2.0",
+    "moment": "^2.24.0"
+  }
+}
