@@ -4,30 +4,22 @@ Creates CSV files from a given set of voter declrations (VDs) (also as CSV) such
 
 ## Usage
 
-Put the VDs as CSV files in the *csv* folder. Run the *index.js* file:
+Put the VDs as CSV files in the *csv* folder. Run the following command:
 
 ```bash
-$ node src/index.js
+$ npm start -- --optin=2019-04-04
 ```
+
+where the `--optin` option is used to filter VDs based on the given creation time.
 
 You should get a similar result:
 
 ```
-CSV file has 80 lines
-CSV file has 3991 lines
-CSV file has 1095 lines
-Finished parsing 5145 emails.
-Creating CSV: /Users/foo/bar/vd-csv-creator/out/out-500.csv
-Creating CSV: /Users/foo/bar/vd-csv-creator/out/out-1000.csv
-Creating CSV: /Users/foo/bar/vd-csv-creator/out/out-1500.csv
-Creating CSV: /Users/foo/bar/vd-csv-creator/out/out-2000.csv
-Creating CSV: /Users/foo/bar/vd-csv-creator/out/out-2500.csv
-Creating CSV: /Users/foo/bar/vd-csv-creator/out/out-3000.csv
-Creating CSV: /Users/foo/bar/vd-csv-creator/out/out-3500.csv
-Creating CSV: /Users/foo/bar/vd-csv-creator/out/out-4000.csv
-Creating CSV: /Users/foo/bar/vd-csv-creator/out/out-4500.csv
-Creating CSV: /Users/foo/bar/vd-csv-creator/out/out-5000.csv
-Creating CSV: /Users/foo/bar/vd-csv-creator/out/out-5145.csv
+Read 10 lines (out of 93) from CSV file "...\vd-csv-creator\csv\cleaned_members_export_bd91baeb6f.csv".
+Read 6 lines (out of 1204) from CSV file "...\vd-csv-creator\csv\unsubscribed_members_export_bd91baeb6f.csv".
+Read 316 lines (out of 4485) from CSV file "...\vd-csv-creator\csv\subscribed_members_export_bd91baeb6f.csv".
+Finished parsing 332 emails.
+Creating CSV: ...\vd-csv-creator\out\out-332.csv
 Done!
 ```
 
